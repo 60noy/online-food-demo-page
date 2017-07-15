@@ -1,0 +1,54 @@
+/* main: ../main.scss */
+@import "../base/colors",
+"../base/typography";
+.recipes{
+  display: flex;
+  margin: 3% 20% 0 20%;
+  // TODO: make this 2 columns grid with dynamic rows
+}
+
+.btn-recipe-add-to-cart{
+  border: 2px solid $green500 !important;
+  border-radius: 5%;
+  &:hover{
+    background-color: $green500;
+    color: white;
+    transition: all .5s;
+  }
+}
+
+.category{
+  margin-left: 5%;
+  margin-right: 5%;
+  .category-title{
+    text-align: center;
+    font-size: $primary-font-size;
+    font-family: $primary-font-family;
+    color: $green800;
+  }
+  .recipe-section{
+    margin-top: 2%;
+    .recipe-header{
+      display: flex;
+      justify-content:space-between;
+      font-size: $secondary-font-size;
+      font-family: $secondary-font-family;
+      font-weight: bold;
+        .recipe-price{
+          font-family: $price-font-family;
+          font-size: $price-font-size;
+          font-weight: lighter;
+      }
+  }
+  .recipe-content{
+    font-family: $description-font-family;
+    font-size: $description-font-size;
+    margin-bottom: 2%;
+  }
+  .btn-recipe-add-to-cart{
+    align: right;
+  }
+}
+
+
+}

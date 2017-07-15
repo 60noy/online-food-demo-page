@@ -1,0 +1,15 @@
+/* main: ../main.scss */
+
+%btn,
+.btn{
+  border: none;
+  cursor: pointer;
+  padding: 1% 2%;
+  background: none;
+  text-transform: uppercase;
+}
+.container{
+  min-width: 100%;
+  min-height: 100%;
+  margin: auto 0;
+}

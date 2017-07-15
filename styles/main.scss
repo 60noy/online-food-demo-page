@@ -1,0 +1,15 @@
+@import "base/typography",
+"base/media-queries",
+"components/recipe",
+"components/footer",
+"components/page-header",
+"components/navbar",
+"layouts/base",
+"layouts/grid";
+body{
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+
+}

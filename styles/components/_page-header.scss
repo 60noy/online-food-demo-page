@@ -1,0 +1,50 @@
+/* main: ../main.scss */
+@import "../base/typography",
+"../base/media-queries";
+.header{
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/header_bg.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  .title{
+    color: white;
+    font-size: $main-title-font-size;
+    font-family: $secondary-font-family;
+    line-height: $main-title-line-height;
+    @include tablet{
+      font-size: $main-title-font-size-tablet;
+    };
+    @include mobile{
+      font-size: $main-title-font-size-mobile;
+    };
+  }
+  .btn-navigate-down{
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: white;
+    margin-top: 5vh;
+    font-size: 3rem;
+    transform: rotate(180deg);
+    font-family: Roboto sans-serif;
+    font-weight: 300;
+    border: 1px solid white;
+    cursor: pointer;
+    &:hover{
+      border: 2px solid white;
+      transition: all .5s ;
+    }
+    &:focus{
+      outline: 0;
+    }
+
+  }
+}
