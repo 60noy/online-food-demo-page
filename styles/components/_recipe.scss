@@ -6,14 +6,10 @@
   display: flex;
   flex-direction: row;
   flex-flow: row wrap;
-<<<<<<< HEAD
   margin: 3% 0 0 10%;
   @include mq-medium{
     margin-right: 5%;
   };
-=======
-  margin: 3% 20% 0 20%;
->>>>>>> 23bad9e41217c078e563c547ab7991562047c037
   // TODO: make this 2 columns grid with dynamic rows
 }
 .btn-recipe-add-to-cart{
@@ -22,19 +18,10 @@
   border: none;
   cursor: pointer;
   color: white;
-<<<<<<< HEAD
   font-size: 1.1vw;
   padding: 1.4% 5%;
-  margin-bottom: 3vh;
   margin-top: 1vh;
   font-family: $secondary-font-family;
-=======
-  text-transform: uppercase;
-  font-size: 1.1rem;
-  padding: 1.4% 5%;
-  margin-top: 2%;
-  font-family: $description-font-family;
->>>>>>> 23bad9e41217c078e563c547ab7991562047c037
   &:hover{
     background-color: darken($green500, 10%);
     color: white;
@@ -64,12 +51,8 @@
   }
 
   .recipe-section{
-<<<<<<< HEAD
-    margin-top: 5vh;
+    margin-top: 10vh;
     margin-bottom: 10vh;
-=======
-    margin-top: 15%;
->>>>>>> 23bad9e41217c078e563c547ab7991562047c037
     .recipe-header{
       display: flex;
       justify-content:space-between;
@@ -108,20 +91,4 @@
       }
     }
   }
-<<<<<<< HEAD
-=======
-  .recipe-content{
-    font-family: $description-font-family;
-    font-size: $description-font-size;
-  }
-  .btn-recipe-add-to-cart{
-    text-align: right;
-    float: right;
-    clear: right;
-    display: block;
-  }
-}
-
-
->>>>>>> 23bad9e41217c078e563c547ab7991562047c037
 }
