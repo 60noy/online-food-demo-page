@@ -10,7 +10,6 @@
   @include mq-medium{
     margin-right: 5%;
   };
-  // TODO: make this 2 columns grid with dynamic rows
 }
 .btn-recipe-add-to-cart{
   border-radius: 5%;
@@ -51,7 +50,7 @@
   }
 
   .recipe-section{
-    margin-top: 10vh;
+    margin-top: 5vh;
     margin-bottom: 10vh;
     .recipe-header{
       display: flex;
