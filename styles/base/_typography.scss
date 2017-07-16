@@ -1,15 +1,26 @@
 /* main: ../main.scss */
 $main-title-font-family: Roboto, sans-serif;
-$main-title-font-size: 4rem;
+$main-title-font-size: 4vw;
 $main-title-line-height: 1.1;
-$main-title-font-size-tablet: 3rem;
+$main-title-font-size-tablet: 3vw;
 $main-title-line-height-tablet: .8;
-$main-title-font-size-mobile: 1rem;
+$main-title-font-size-mobile: 1vw;
+
+$secondary-title-font-size : 3vw;
+
+$small-title-font-size: 2vw;
+$small-title-font-family: Open Sans, sans-serif;
+
 $primary-font-family:Roboto, sans-serif ;
-$primary-font-size: 1.8rem;
+$primary-font-size: 1.8vw;
+
 $secondary-font-family: Open Sans, sans-serif ;
-$secondary-font-size: 1.4rem;
-$description-font-size: 1.1rem;
+$secondary-font-size: 1.4vw;
+
+$description-font-size: 1.1vw;
 $description-font-family: Raleway ,sans-serif;
+
 $price-font-family: Indie Flower, sans-serif;
-$price-font-size: 1.3em;
+$price-font-size: 1.8vw;
+
+$add-to-cart-font-size : 1vw;

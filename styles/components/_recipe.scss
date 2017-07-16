@@ -1,54 +1,95 @@
 /* main: ../main.scss */
 @import "../base/colors",
-"../base/typography";
+"../base/typography",
+"../base/media-queries";
 .recipes{
   display: flex;
-  margin: 3% 20% 0 20%;
+  flex-direction: row;
+  flex-flow: row wrap;
+  margin: 3% 0 0 10%;
+  @include mq-medium{
+    margin-right: 5%;
+  };
   // TODO: make this 2 columns grid with dynamic rows
 }
-
 .btn-recipe-add-to-cart{
-  border: 2px solid $green500 !important;
   border-radius: 5%;
+  background: $green500;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.1vw;
+  padding: 1.4% 5%;
+  margin-bottom: 3vh;
+  margin-top: 1vh;
+  font-family: $secondary-font-family;
   &:hover{
-    background-color: $green500;
+    background-color: darken($green500, 10%);
     color: white;
     transition: all .5s;
   }
 }
-
 .category{
+  flex: 0 1 calc(33% - 8px);
   margin-left: 5%;
   margin-right: 5%;
+  @include mq-small{
+    flex: 0 1 calc(100% - 8px);
+  };
+  @include mq-medium{
+    flex: 0 1 calc(40% - 8px);
+
+    };
   .category-title{
     text-align: center;
+    text-decoration: underline;
     font-size: $primary-font-size;
     font-family: $primary-font-family;
     color: $green800;
+    @include mq-small{
+      font-size: $primary-font-size * 2;
+    }
   }
+
   .recipe-section{
-    margin-top: 2%;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
     .recipe-header{
       display: flex;
       justify-content:space-between;
       font-size: $secondary-font-size;
       font-family: $secondary-font-family;
       font-weight: bold;
+      @include mq-small{
+        font-size: $secondary-font-size * 2;
+      }
+      @include mq-medium{
+        font-size: $secondary-font-size * 1.2;
+      }
         .recipe-price{
           font-family: $price-font-family;
           font-size: $price-font-size;
           font-weight: lighter;
+          @include mq-small{
+            font-size: $price-font-size * 2;
+          }
       }
+    }
+    .recipe-content{
+      font-family: $description-font-family;
+      font-size: $description-font-size;
+      @include mq-small{
+        font-size: $description-font-size * 2;
+      }
+    }
+    .btn-recipe-add-to-cart{
+      text-align: right;
+      float: right;
+      display: block;
+      font-size: $add-to-cart-font-size;
+      @include mq-small{
+        font-size: $add-to-cart-font-size * 2;
+      }
+    }
   }
-  .recipe-content{
-    font-family: $description-font-family;
-    font-size: $description-font-size;
-    margin-bottom: 2%;
-  }
-  .btn-recipe-add-to-cart{
-    align: right;
-  }
-}
-
-
 }

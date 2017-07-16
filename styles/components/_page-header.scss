@@ -1,6 +1,7 @@
 /* main: ../main.scss */
 @import "../base/typography",
-"../base/media-queries";
+"../base/media-queries",
+"../base/colors";
 .header{
   background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/header_bg.jpg');
   background-size: cover;
@@ -15,24 +16,59 @@
   flex-direction: column;
   .title{
     color: white;
-    font-size: $main-title-font-size;
-    font-family: $secondary-font-family;
+    text-align: center;
+    font-family: $description-font-family;
     line-height: $main-title-line-height;
-    @include tablet{
-      font-size: $main-title-font-size-tablet;
+    @include mq-small{
+      line-height: $main-title-line-height * 1.4;
     };
-    @include mobile{
-      font-size: $main-title-font-size-mobile;
+    // @include tablet{
+    //   font-size: $main-title-font-size-tablet;
+    // };
+    // @include mobile{
+    //   font-size: $main-title-font-size-mobile;
+    // };
+    @include mq-medium{
+      font-size: $secondary-title-font-size * 2;
+      line-height: $main-title-line-height * 1.2;
     };
+    .secondary{
+      font-size: $secondary-title-font-size;
+      @include mq-small{
+        font-size: $secondary-title-font-size * 2;
+      };
+      @include mq-large{
+        margin-top: 1vw;
+      };
+    }
+    .primary{
+      font-size: $main-title-font-size;
+      @include mq-small{
+        font-size: $main-title-font-size * 1.8  ;
+      };
+    }
+    .small{
+      background-color: transparentize($green800, 0.5);
+      margin-top: 2vh;
+      font-weight: 400;
+      font-size: $small-title-font-size;
+      font-family: $small-title-font-family;
+      color: $light-grey;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      @include mq-small{
+        font-size: $small-title-font-size * 1.6;
+      };
+    }
   }
   .btn-navigate-down{
-    height: 48px;
-    width: 48px;
+    height: 3.5vw;
+    width: 3.5vw;
     border-radius: 50%;
     background-color: transparent;
     color: white;
     margin-top: 5vh;
-    font-size: 3rem;
+    font-size: 3vw;
     transform: rotate(180deg);
     font-family: Roboto sans-serif;
     font-weight: 300;

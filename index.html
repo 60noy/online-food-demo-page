@@ -13,22 +13,24 @@
   </head>
   <body>
     <div class="container">
-      <div class="navbar">
-        <div class="right-icon">
-          ICON
-        </div>
-      </div>
       <div class="header">
         <div class="title">
-          Some Of The Best Food
-          <br/>
-          You Are Ever Gonna Taste
+          <div class="secondary">
+            Some Of The Best Food
+          </div>
+          <div class="primary">
+            You Are Ever Gonna Taste
+          </div>
+          <div class="small">
+            Trust us. You're gonna like it.
+          </div>
         </div>
         <input type="button"
         value="^" class="btn-navigate-down"
-  />
+        id="btn-scroll-down"
+        />
       </div>
-      <div class="recipes">
+      <div class="recipes" id="recipes">
         <div class="category">
           <div class="category-title">
             Soups And Salads
@@ -45,7 +47,25 @@
             <div class="recipe-content">
               Freshly diced tomatoes, red onion, shredded carrots, cucumbers, 3-cheese blend & garlic croutons. Served with your choice of dressing.
             </div>
-            <input type="button" class="btn btn-recipe-add-to-cart" value="Add To Cart">
+            <div>
+              <button type="button" class="btn-recipe-add-to-cart"><img src="./images/cart_icon.png" />Add</button>
+            </div>
+          </div>
+          <div class="recipe-section">
+            <div class="recipe-header">
+              <div class="recipe-title">
+                Terlingua Chili
+              </div>
+              <div class="recipe-price">
+                $6.35
+              </div>
+            </div>
+            <div class="recipe-content">
+              Slow-cooked chili with beef, onions & chiles. Topped with cheese.
+            </div>
+            <div>
+              <button type="button" class="btn-recipe-add-to-cart"><img src="./images/cart_icon.png" />Add</button>
+            </div>
           </div>
           <div class="recipe-section">
             <div class="recipe-header">
@@ -59,7 +79,62 @@
             <div class="recipe-content">
               Grilled chile-seasoned chicken, house-made pico de gallo, diced avocado, chopped cilantro, tortilla strips with house-made ranch & a drizzle of spicy Santa Fe sauce.
             </div>
-            <input type="button" class="btn btn-recipe-add-to-cart" value="Add To Cart">
+            <div>
+              <button type="button" class="btn-recipe-add-to-cart"><img src="./images/cart_icon.png" />Add</button>
+            </div>
+          </div>
+        </div>
+        <div class="category">
+          <div class="category-title">
+            Appetizers
+          </div>
+          <div class="recipe-section">
+            <div class="recipe-header">
+              <div class="recipe-title">
+                Fried Asparagus
+              </div>
+              <div class="recipe-price">
+                $4.50
+              </div>
+            </div>
+            <div class="recipe-content">
+              Fresh asparagus lightly battered and quick-fried. Topped with crumbled queso fresco, chopped cilantro & a drizzle of chimichurri sauce. Served with roasted garlic aioli.
+            </div>
+            <div>
+              <button type="button" class="btn-recipe-add-to-cart"><img src="./images/cart_icon.png" />Add</button>
+            </div>
+          </div>
+          <div class="recipe-section">
+            <div class="recipe-header">
+              <div class="recipe-title">
+                Loaded Boneless Wings
+              </div>
+              <div class="recipe-price">
+                $6.75
+              </div>
+            </div>
+            <div class="recipe-content">
+              Boneless wings smothered in white queso, 3-cheese blend, applewood smoked bacon & chopped green onions. Served with a side of house-made ranch.
+            </div>
+            <div>
+              <button type="button" class="btn-recipe-add-to-cart"><img src="./images/cart_icon.png" />Add</button>
+            </div>
+          </div>
+          <div class="recipe-section">
+            <div class="recipe-header">
+              <div class="recipe-title">
+                White Spinach Queso
+              </div>
+              <div class="recipe-price">
+                $5.00
+              </div>
+            </div>
+            <div class="recipe-content">
+              White queso & chopped spinach topped with shredded Monterey Jack cheese, house-made pico de gallo, fresh guacamole, queso fresco & chopped cilantro. Served with warm tostada chips & fresh salsa.
+            </div>
+            <div>
+              <button type="button" class="btn-recipe-add-to-cart"><img src="./images/cart_icon.png" />Add</button>
+            </div>
           </div>
         </div>
         <div class="category">
@@ -78,7 +153,96 @@
             <div class="recipe-content">
               Warm blackberries & blueberries baked with rich buttercake topped with streusel and finished with vanilla ice cream, strawberry sauce & cinnamon-sugar.
             </div>
-            <input type="button" class="btn btn-recipe-add-to-cart" value="Add To Cart">
+            <div>
+              <button type="button" class="btn-recipe-add-to-cart"><img src="./images/cart_icon.png" />Add</button>
+            </div>
+          </div>
+          <div class="recipe-section">
+            <div class="recipe-header">
+              <div class="recipe-title">
+                Skillet Toffee Fudge Brownie
+              </div>
+              <div class="recipe-price">
+                $4.50
+              </div>
+            </div>
+            <div class="recipe-content">
+              Oven-baked toffee brownie topped with vanilla ice cream, drizzled with caramel sauce & topped with toffee pieces. († This dish contains nuts).
+            </div>
+            <div>
+              <button type="button" class="btn-recipe-add-to-cart"><img src="./images/cart_icon.png" />Add</button>
+            </div>
+          </div>
+          <div class="recipe-section">
+            <div class="recipe-header">
+              <div class="recipe-title">
+                Skillet Chocolate Chip Cookie
+              </div>
+              <div class="recipe-price">
+                $6.50
+              </div>
+            </div>
+            <div class="recipe-content">
+              Oven-baked chocolate chip cookie topped with vanilla ice cream & drizzled with hot fudge.
+            </div>
+            <div>
+              <button type="button" class="btn-recipe-add-to-cart"><img src="./images/cart_icon.png" />Add</button>
+            </div>
+          </div>
+        </div>
+        <div class="category">
+          <div class="category-title">
+            Burgers
+          </div>
+          <div class="recipe-section">
+            <div class="recipe-header">
+              <div class="recipe-title">
+                Sweet & Smoky Burger
+              </div>
+              <div class="recipe-price">
+                $8.75
+              </div>
+            </div>
+            <div class="recipe-content">
+              Topped with melted pepper Jack cheese, applewood smoked bacon,spiced panko onion rings, fresh leaf lettuce, tomato,mango-infused BBQ sauce & Chili's Signature sauce. Served with a side of mango-infused BBQ sauce.
+            </div>
+            <div>
+              <button type="button" class="btn-recipe-add-to-cart"><img src="./images/cart_icon.png" />Add</button>
+            </div>
+          </div>
+          <div class="recipe-section">
+            <div class="recipe-header">
+              <div class="recipe-title">
+                Guacamole Burger
+              </div>
+              <div class="recipe-price">
+                $10.00
+              </div>
+            </div>
+            <div class="recipe-content">
+              Topped with fresh guacamole, melted Monterey Jack cheese, fire-roasted jalapeños, sauteed red & green bell peppers, caramelized onions & cumin-lime sour cream.
+            </div>
+            <div>
+              <button type="button" class="btn-recipe-add-to-cart"><img src="./images/cart_icon.png" />Add</button>
+            </div>
+          </div>
+          <div class="recipe-section">
+            <div class="recipe-header">
+              <div class="recipe-title">
+                Oldtimer® with Cheese
+              </div>
+              <div class="recipe-price">
+                $8.75
+              </div>
+            </div>
+            <div class="recipe-content">
+              A Chili's classic - improved! Hand seasoned beef patty, seared to perfection. Topped with house-made garlic dill pickles, fresh leaf lettuce, tomato, sliced red onions & mustard. chips & fresh salsa.
+            </div>
+            <div>
+              <div>
+                <button type="button" class="btn-recipe-add-to-cart"><img src="./images/cart_icon.png" />Add</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
